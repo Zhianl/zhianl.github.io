@@ -540,7 +540,7 @@ header .go-back i {
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
-}
+} 
 
 .index-cover {
     height: 100vh;
@@ -553,6 +553,7 @@ header .go-back i {
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
+    opacity: 0;
 }
 
 .bg-cover:before,
