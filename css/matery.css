@@ -580,6 +580,12 @@ header .go-back i {
     margin-bottom: 20px;
     position: relative;
 }
+.bg-cover .notfind {
+    font-size: 2rem;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    position: relative;
+}
 
 .bg-cover .description {
     font-weight: 300;
