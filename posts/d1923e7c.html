@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="love, 之安詹">
-    <meta name="description" content="这是一次成功的自动打开编辑器测试">
+    <meta name="keywords" content="Kali2023安装Nessus, 之安詹">
+    <meta name="description" content="&#34;自由的唯一真实形式是自我限制。不是选择生活中想要的一切特权，而是选择在生活中你要放弃什么。&#34;——《果敢的活法》">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>love | 之安詹</title>
+    <title>Kali2023安装Nessus | 之安詹</title>
     <link rel="icon" type="image/png" href="/snake.png">
     
     <style>
@@ -370,12 +370,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">love</h1>
+                    <h1 class="description center-align post-title">Kali2023安装Nessus</h1>
                 </div>
             </div>
         </div>
@@ -399,14 +399,27 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                                <span class="chip bg-color">测试</span>
+                            <a href="/tags/Kali/">
+                                <span class="chip bg-color">Kali</span>
+                            </a>
+                        
+                            <a href="/tags/Nessus/">
+                                <span class="chip bg-color">Nessus</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/security/" class="post-category">
+                                security
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -415,21 +428,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-11-18
+                    2023-11-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-11-19
+                    2023-11-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    16
+                    475
                 </div>
                 
 
@@ -456,7 +469,75 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="这是一次成功的自动打开编辑器测试"><a href="#这是一次成功的自动打开编辑器测试" class="headerlink" title="这是一次成功的自动打开编辑器测试"></a>这是一次成功的自动打开编辑器测试</h1>
+                <h1 id="Kali-2023-安装-Nessus"><a href="#Kali-2023-安装-Nessus" class="headerlink" title="Kali 2023 安装 Nessus"></a>Kali 2023 安装 Nessus</h1><h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>在Kali中访问Nessus官网下载对应的系统安装包</p>
+<p>Nessus官网：<a target="_blank" rel="noopener" href="https://www.tenable.com/downloads/nessus?loginAttempted=true">https://www.tenable.com/downloads/nessus?loginAttempted=true</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121230432479.png" alt=" "></p>
+<h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p>为了方便，在root目录新建一个Nessus文件夹.</p>
+<p>下载完成后，执行以下命令安装。</p>
+<p>&nbsp;</p>
+<pre class=" language-bash"><code class="language-bash">dpkg -i Nessus-10.6.3-debian10_amd64.deb 
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124103356871.png"></p>
+<h2 id="三、启动"><a href="#三、启动" class="headerlink" title="三、启动"></a>三、启动</h2><p>安装完成后，启动Nessus服务.</p>
+<p>&nbsp;</p>
+<pre class=" language-bash"><code class="language-bash">systemctl start nessusd.service
+</code></pre>
+<p>&nbsp;</p>
+<p>访问 <a target="_blank" rel="noopener" href="https://kali:8834/">https://kali:8834/</a> 进入安装页面，选择continue。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/8e3d4b4ded53a3b38afa1625503f7cbd430579369.png%401256w_672h_!web-article-pic.avif"></p>
+<p>&nbsp;</p>
+<p>选择 Link Nessus to another Tenable product 离线部署，Continue；</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/9d4825e9b177627cf268ff02dad6651b430579369.png%401256w_672h_!web-article-pic.avif"></p>
+<p>&nbsp;</p>
+<p>选择 tenable.sc，Continue。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/f840692313a27d2e65ad2972211600ab430579369.png%401256w_672h_!web-article-pic.avif"></p>
+<p>&nbsp;</p>
+<p>然后设置用户名和密码，然后Submit，等待配置完成。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121234926713.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235006929.png"></p>
+<p>&nbsp;</p>
+<p>安装完成，因为是离线安装，所以很多插件都没有下载。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235229663.png"></p>
+<h2 id="四、离线激活"><a href="#四、离线激活" class="headerlink" title="四、离线激活"></a>四、离线激活</h2><p>访问官网注册账户获取注册码，注册码会发到你填的邮箱中。</p>
+<p>注册页面：<a target="_blank" rel="noopener" href="https://zh-cn.tenable.com/tenable-for-education/nessus-essentials?edu=true">https://zh-cn.tenable.com/tenable-for-education/nessus-essentials?edu=true</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121233405462.png"></p>
+<p>&nbsp;</p>
+<p>打开邮箱查看注册码，注册码只能使用一次。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121233702309.png"></p>
+<p>&nbsp;</p>
+<p>输入以下命令获取challenge码</p>
+<pre class=" language-bash"><code class="language-bash">/opt/nessus/sbin/nessuscli fetch --challenge
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121234110056.png"></p>
+<p>&nbsp;</p>
+<p>然后访问：<a target="_blank" rel="noopener" href="https://plugins.nessus.org/v2/offline.php">https://plugins.nessus.org/v2/offline.php</a> ，输入challenge码和注册码进行激活。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121234308787.png"></p>
+<p>提交后官方会给出插件的下载地址和激活证书，然后复制链接地址到新窗口下载。</p>
+<p>如果直接点击下载，页面跳转后激活证书会失效。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235514720.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235653434.png"></p>
+<p>下载后，将插件和证书放到Nessus目录下。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235852941.png"></p>
+<h2 id="五、安装插件"><a href="#五、安装插件" class="headerlink" title="五、安装插件"></a>五、安装插件</h2><pre class=" language-bash"><code class="language-bash">/opt/nessus/sbin/nessuscli update ./all-2.0.tar.gz
+</code></pre>
+<p>&nbsp;</p>
+<p>提示 Update successful 即插件更新成功。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231122000359650.png"></p>
+<h2 id="六、安装证书"><a href="#六、安装证书" class="headerlink" title="六、安装证书"></a>六、安装证书</h2><pre class=" language-bash"><code class="language-bash">/opt/nessus/sbin/nessuscli fetch --register-offline nessus.license
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/9e75609513a7edffec776a764c474084430579369.png%401256w_712h_!web-article-pic.avif"></p>
+<h2 id="七、重启Nessus"><a href="#七、重启Nessus" class="headerlink" title="七、重启Nessus"></a>七、重启Nessus</h2><pre class=" language-bash"><code class="language-bash">systemctl restart nessusd
+</code></pre>
+<p>&nbsp;</p>
+<p>等待更新完成。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/236cb330e7879da6aaa8f3f003179c09430579369.png%401256w_672h_!web-article-pic.avif"></p>
+<p>加载完成后，输入之前设置的账号密码进行登录。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231122001029804.png"></p>
+<p>等待插件编译完成</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231122000858088.png"></p>
+<h2 id="八、编译过程中遇到的问题"><a href="#八、编译过程中遇到的问题" class="headerlink" title="八、编译过程中遇到的问题"></a>八、编译过程中遇到的问题</h2><h3 id="1、磁盘内存不足"><a href="#1、磁盘内存不足" class="headerlink" title="1、磁盘内存不足"></a>1、磁盘内存不足</h3><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124133856812.png"></p>
+<h3 id="2、解决方法：添加磁盘空间"><a href="#2、解决方法：添加磁盘空间" class="headerlink" title="2、解决方法：添加磁盘空间"></a>2、解决方法：添加磁盘空间</h3><p>瞬间穿越，探索未知领域！<a href="/posts/6e71f53.html" title="Kali 增加磁盘空间">Kali 增加磁盘空间</a></p>
+
                 
             </div>
             <hr/>
@@ -482,7 +563,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zhianl.github.io/posts/1739.html">https://zhianl.github.io/posts/1739.html</a>
+                    <a href="https://zhianl.github.io/posts/d1923e7c.html">https://zhianl.github.io/posts/d1923e7c.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -520,8 +601,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B5%8B%E8%AF%95/">
-                                    <span class="chip bg-color">测试</span>
+                                <a href="/tags/Kali/">
+                                    <span class="chip bg-color">Kali</span>
+                                </a>
+                            
+                                <a href="/tags/Nessus/">
+                                    <span class="chip bg-color">Nessus</span>
                                 </a>
                             
                         </div>
@@ -604,6 +689,59 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/posts/6e71f53.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Kali 增加磁盘空间">
+                        
+                        <span class="card-title">Kali 增加磁盘空间</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            "自由的唯一真实形式是自我限制。不是选择生活中想要的一切特权，而是选择在生活中你要放弃什么。"——《果敢的活法》
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Kali/" class="post-category">
+                                    Kali
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Kali/">
+                        <span class="chip bg-color">Kali</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A3%81%E7%9B%98/">
+                        <span class="chip bg-color">磁盘</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/posts/11471.html">
                     <div class="card-image">
                         
@@ -620,9 +758,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-11-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -638,43 +776,6 @@
                         <span class="chip bg-color">心理学</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/16107.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            zhanyi
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
@@ -867,7 +968,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">902</span>
+                        class="white-color">2.7k</span>
             
             
             
