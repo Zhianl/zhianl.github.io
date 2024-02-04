@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>JavaScript用法</title>
+      <link href="/posts/7d59b035.html"/>
+      <url>/posts/7d59b035.html</url>
+      
+        <content type="html"><![CDATA[<p>HTML 中的 Javascript 脚本代码必须位于 <strong><script></strong> 与 <strong></script></strong> 标签之间。</p><p>Javascript 脚本代码可被放置在 HTML 页面的 <strong><body></strong> 和 <strong><head></strong> 部分中。</p><h2 id="一、-标签"><a href="#一、-标签" class="headerlink" title="一、&lt;script&gt; 标签"></a>一、&lt;script&gt; 标签</h2><p>如需在 HTML 页面中插入 JavaScript，请使用 &lt;script&gt; 标签。</p><p> &lt;script&gt; 和 &lt;&#x2F;script&gt; 会告诉 JavaScript 在哪里开始和结束。</p><p> &lt;script&gt; 和 &lt;&#x2F;script&gt; 之间的代码包含了 JavaScript。</p><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script<span class="token operator">></span>    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"我的第一个 JavaScript代码"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre><h2 id="二、-或-中的-JavaScript"><a href="#二、-或-中的-JavaScript" class="headerlink" title="二、&lt;head&gt; 或 &lt;body&gt; 中的 JavaScript"></a>二、&lt;head&gt; 或 &lt;body&gt; 中的 JavaScript</h2><p>你可以在 HTML 文档中放入不限数量的 JS 脚本。</p><p>脚本可位于 HTML 的 &lt;body&gt; 或 &lt;head&gt; 部分中，或者同时存在于两个部分中。</p><p>通常的做法是把函数放入 &lt;head&gt; 部分中，或者放在页面底部。这样就可以把它们安置到同一处位置，不会干扰页面的内容。</p><h3 id="JavaScript-函数和事件"><a href="#JavaScript-函数和事件" class="headerlink" title="JavaScript 函数和事件"></a>JavaScript 函数和事件</h3><p>通常，我们需要在某个事件发生时执行代码，比如当用户点击按钮时。</p><p>如果我们把 JavaScript 代码放入函数中，就可以在事件发生时调用该函数。</p><h3 id="中的-JavaScript-函数"><a href="#中的-JavaScript-函数" class="headerlink" title="&lt;head&gt; 中的 JavaScript 函数"></a>&lt;head&gt; 中的 JavaScript 函数</h3><p>把一个 JavaScript 函数放置到 HTML 页面的 &lt;head&gt; 部分，该函数会在点击按钮时被调用。</p><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript"><span class="token keyword">function</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"demo"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML<span class="token operator">=</span><span class="token string">"我的第一个 JavaScript 函数"</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>我的 Web 页面<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>demo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>一个段落<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myFunction()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>尝试一下<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre><h3 id="中的-JavaScript-函数-1"><a href="#中的-JavaScript-函数-1" class="headerlink" title="&lt;body&gt; 中的 JavaScript 函数"></a>&lt;body&gt; 中的 JavaScript 函数</h3><p>把一个 JavaScript 函数放置到 HTML 页面的 &lt;body&gt; 部分，该函数会在点击按钮时被调用。</p><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>我的 Web 页面<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>demo<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>一个段落<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myFunction()<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>尝试一下<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript"><span class="token keyword">function</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"demo"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML<span class="token operator">=</span><span class="token string">"我的第一个 JavaScript 函数"</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre><h2 id="三、外部的-JavaScript"><a href="#三、外部的-JavaScript" class="headerlink" title="三、外部的 JavaScript"></a>三、外部的 JavaScript</h2><p>也可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。</p><p>外部脚本不能包含 &lt;script&gt; 标签。</p><p>外部 JavaScript 文件的文件扩展名是 .js。</p><p>如需使用外部文件，请在 &lt;script&gt; 标签的 “src” 属性中设置该 .js 文件</p><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myScript.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript简介</title>
+      <link href="/posts/c21cf4c6.html"/>
+      <url>/posts/c21cf4c6.html</url>
+      
+        <content type="html"><![CDATA[<p>JavaScript 是互联网上最流行的脚本语言，这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><h3 id="一、JavaScript-特点"><a href="#一、JavaScript-特点" class="headerlink" title="一、JavaScript 特点"></a>一、JavaScript 特点</h3><ol><li>JavaScript 是一种轻量级的编程语言。</li><li>JavaScript 是可插入 HTML 页面的编程代码。</li><li>JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。</li><li>JavaScript 很容易学习。</li></ol><h3 id="二、JavaScript-功能"><a href="#二、JavaScript-功能" class="headerlink" title="二、JavaScript 功能"></a>二、JavaScript 功能</h3><ol><li>在网页中添加新的 HTML，修改网页已有内容和网页的样式。</li><li>响应用户的行为，响应鼠标的点击，指针的移动，按键的按动。</li><li>向远程服务器发送网络请求，下载和上传文件（所谓的 <a href="https://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a> 和 <a href="https://en.wikipedia.org/wiki/Comet_(programming)">COMET</a> 技术）。</li><li>获取或设置 cookie，向访问者提出问题或发送消息。</li><li>记住客户端的数据（“本地存储”）。</li></ol><h3 id="三、JavaScript的限制"><a href="#三、JavaScript的限制" class="headerlink" title="三、JavaScript的限制"></a>三、JavaScript的限制</h3><ol><li>网页中的 JavaScript 不能读、写、复制和执行硬盘上的任意文件。它没有直接访问操作系统的功能。</li><li>不同的标签页&#x2F;窗口之间通常互不了解。有时候，也会有一些联系，例如一个标签页通过 JavaScript 打开的另外一个标签页。但即使在这种情况下，如果两个标签页打开的不是同一个网站（域名、协议或者端口任一不相同的网站），它们都不能相互通信。</li><li>JavaScript 可以轻松地通过互联网与当前页面所在的服务器进行通信。但是从其他网站&#x2F;域的服务器中接收数据的能力被削弱了。尽管可以，但是需要来自远程服务器的明确协议（在 HTTP header 中）。这也是为了用户的信息安全。</li></ol><h3 id="四、JavaScript的与众不同"><a href="#四、JavaScript的与众不同" class="headerlink" title="四、JavaScript的与众不同"></a>四、JavaScript的与众不同</h3><ol><li>与HTML&#x2F;CSS完全集成</li><li>简单的事，简单地完成</li><li>被所有的主流浏览器支持，并且默认开启</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Kali 增加磁盘空间</title>
+      <link href="/posts/6e71f53.html"/>
+      <url>/posts/6e71f53.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、查看磁盘占有情况"><a href="#一、查看磁盘占有情况" class="headerlink" title="一、查看磁盘占有情况"></a>一、查看磁盘占有情况</h2><p>可以看到 <code>/dev/sda1</code> 占用了74%，<code>/</code> 是根目录。</p><p>&nbsp;</p><pre class=" language-bash"><code class="language-bash"><span class="token function">df</span> -h<span class="token comment" spellcheck="true">#查看磁盘占有情况</span></code></pre><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124135817149.png" style="zoom: 100%;" /><h2 id="二、扩展虚拟机磁盘"><a href="#二、扩展虚拟机磁盘" class="headerlink" title="二、扩展虚拟机磁盘"></a>二、扩展虚拟机磁盘</h2><p>关闭虚拟机，然后打开设置，选择硬盘，点击扩展，根据物理机磁盘设置扩展的磁盘大小。</p><p>我的磁盘多一点，我选择了40G。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124135449615.png"></p><h2 id="三、挂载磁盘"><a href="#三、挂载磁盘" class="headerlink" title="三、挂载磁盘"></a>三、挂载磁盘</h2><p>重启 Kali 虚拟机，然后通过磁盘管理工具进行挂载。</p><pre class=" language-bash"><code class="language-bash">gparted</code></pre><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124135938062.png"></p><p>可以看到，刚刚拓展的20G还没有进行分配。</p><p>首先停用swap空间。选择<code>linux-swap</code>，然后右键选择 <code>Swapoff</code>。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124140748196.png"></p><p>然后将未分配的 20G 添加到 <code>extended</code> 上。选择 <code>extended</code>，右键选择 <code>Resize/Move</code> 。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141059332.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141431982.png"></p><p>然后移动 <code>linux-swap</code> 的位置，这里注意是点击白色的部分，向右移动到最后，选择OK。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141555409.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141614614.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141651875.png"></p><p>然后再右键<code>extended</code>选择 <code>Resize/Move</code> ，向右拖动将空间全部分配出去。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141920509.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124141934381.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124142042632.png"></p><p>然后选择 <code>/dev/sda1</code>，将空间全部分配进去，然后记得保存提交。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124142159374.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124142236240.png"></p><p>再次查看磁盘空间情况，磁盘已经扩充成功。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124142403939.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Kali </tag>
+            
+            <tag> 磁盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Kali2023安装Nessus</title>
+      <link href="/posts/d1923e7c.html"/>
+      <url>/posts/d1923e7c.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Kali-2023-安装-Nessus"><a href="#Kali-2023-安装-Nessus" class="headerlink" title="Kali 2023 安装 Nessus"></a>Kali 2023 安装 Nessus</h1><h2 id="一、下载"><a href="#一、下载" class="headerlink" title="一、下载"></a>一、下载</h2><p>在Kali中访问Nessus官网下载对应的系统安装包</p><p>Nessus官网：<a href="https://www.tenable.com/downloads/nessus?loginAttempted=true">https://www.tenable.com/downloads/nessus?loginAttempted=true</a></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121230432479.png" alt=" "></p><h2 id="二、安装"><a href="#二、安装" class="headerlink" title="二、安装"></a>二、安装</h2><p>为了方便，在root目录新建一个Nessus文件夹.</p><p>下载完成后，执行以下命令安装。</p><p>&nbsp;</p><pre class=" language-bash"><code class="language-bash">dpkg -i Nessus-10.6.3-debian10_amd64.deb </code></pre><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124103356871.png"></p><h2 id="三、启动"><a href="#三、启动" class="headerlink" title="三、启动"></a>三、启动</h2><p>安装完成后，启动Nessus服务.</p><p>&nbsp;</p><pre class=" language-bash"><code class="language-bash">systemctl start nessusd.service</code></pre><p>&nbsp;</p><p>访问 <a href="https://kali:8834/">https://kali:8834/</a> 进入安装页面，选择continue。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/8e3d4b4ded53a3b38afa1625503f7cbd430579369.png%401256w_672h_!web-article-pic.avif"></p><p>&nbsp;</p><p>选择 Link Nessus to another Tenable product 离线部署，Continue；</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/9d4825e9b177627cf268ff02dad6651b430579369.png%401256w_672h_!web-article-pic.avif"></p><p>&nbsp;</p><p>选择 tenable.sc，Continue。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/f840692313a27d2e65ad2972211600ab430579369.png%401256w_672h_!web-article-pic.avif"></p><p>&nbsp;</p><p>然后设置用户名和密码，然后Submit，等待配置完成。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121234926713.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235006929.png"></p><p>&nbsp;</p><p>安装完成，因为是离线安装，所以很多插件都没有下载。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235229663.png"></p><h2 id="四、离线激活"><a href="#四、离线激活" class="headerlink" title="四、离线激活"></a>四、离线激活</h2><p>访问官网注册账户获取注册码，注册码会发到你填的邮箱中。</p><p>注册页面：<a href="https://zh-cn.tenable.com/tenable-for-education/nessus-essentials?edu=true">https://zh-cn.tenable.com/tenable-for-education/nessus-essentials?edu=true</a></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121233405462.png"></p><p>&nbsp;</p><p>打开邮箱查看注册码，注册码只能使用一次。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121233702309.png"></p><p>&nbsp;</p><p>输入以下命令获取challenge码</p><pre class=" language-bash"><code class="language-bash">/opt/nessus/sbin/nessuscli fetch --challenge</code></pre><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121234110056.png"></p><p>&nbsp;</p><p>然后访问：<a href="https://plugins.nessus.org/v2/offline.php">https://plugins.nessus.org/v2/offline.php</a> ，输入challenge码和注册码进行激活。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121234308787.png"></p><p>提交后官方会给出插件的下载地址和激活证书，然后复制链接地址到新窗口下载。</p><p>如果直接点击下载，页面跳转后激活证书会失效。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235514720.png"></p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235653434.png"></p><p>下载后，将插件和证书放到Nessus目录下。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231121235852941.png"></p><h2 id="五、安装插件"><a href="#五、安装插件" class="headerlink" title="五、安装插件"></a>五、安装插件</h2><pre class=" language-bash"><code class="language-bash">/opt/nessus/sbin/nessuscli update ./all-2.0.tar.gz</code></pre><p>&nbsp;</p><p>提示 Update successful 即插件更新成功。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231122000359650.png"></p><h2 id="六、安装证书"><a href="#六、安装证书" class="headerlink" title="六、安装证书"></a>六、安装证书</h2><pre class=" language-bash"><code class="language-bash">/opt/nessus/sbin/nessuscli fetch --register-offline nessus.license</code></pre><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/9e75609513a7edffec776a764c474084430579369.png%401256w_712h_!web-article-pic.avif"></p><h2 id="七、重启Nessus"><a href="#七、重启Nessus" class="headerlink" title="七、重启Nessus"></a>七、重启Nessus</h2><pre class=" language-bash"><code class="language-bash">systemctl restart nessusd</code></pre><p>&nbsp;</p><p>等待更新完成。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/236cb330e7879da6aaa8f3f003179c09430579369.png%401256w_672h_!web-article-pic.avif"></p><p>加载完成后，输入之前设置的账号密码进行登录。</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231122001029804.png"></p><p>等待插件编译完成</p><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231122000858088.png"></p><h2 id="八、编译过程中遇到的问题"><a href="#八、编译过程中遇到的问题" class="headerlink" title="八、编译过程中遇到的问题"></a>八、编译过程中遇到的问题</h2><h3 id="1、磁盘内存不足"><a href="#1、磁盘内存不足" class="headerlink" title="1、磁盘内存不足"></a>1、磁盘内存不足</h3><p><img src="https://cdn.jsdelivr.net/gh/Zhianl/picture@main/image-20231124133856812.png"></p><h3 id="2、解决方法：添加磁盘空间"><a href="#2、解决方法：添加磁盘空间" class="headerlink" title="2、解决方法：添加磁盘空间"></a>2、解决方法：添加磁盘空间</h3><p>瞬间穿越，探索未知领域！<a href="/posts/6e71f53.html" title="Kali 增加磁盘空间">Kali 增加磁盘空间</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> security </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Kali </tag>
+            
+            <tag> Nessus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>“如何告别恋爱脑”</title>
+      <link href="/posts/11471.html"/>
+      <url>/posts/11471.html</url>
+      
+        <content type="html"><![CDATA[<p> 恋爱脑，又称恋爱迷思、爱情迷茫，是指当一个人陷入恋爱时，对恋爱对象产生一种盲目、无法理智思考的心理状态。恋爱脑通常会导致一个人在感情中过于依赖对方，忽视自己的需求和价值观，甚至做出一些不利于自己的决定。在这里，我们将详细解释恋爱脑的概念、形成的原因，并探讨如何在日常生活中避免其负面影响。</p><h2 id="一、恋爱脑的概念："><a href="#一、恋爱脑的概念：" class="headerlink" title="一、恋爱脑的概念："></a>一、恋爱脑的概念：</h2><p>恋爱脑是指在感情关系中，一个人陷入盲目爱意，难以理智思考的心理状态。恋爱脑可能导致个体在感情中过于迷失自我，忽略个人成长和价值观，甚至对对方的缺点也视而不见。这种现象往往使人在感情中容易受伤，难以做出明智的决策。</p><h2 id="二、恋爱脑的形成原因："><a href="#二、恋爱脑的形成原因：" class="headerlink" title="二、恋爱脑的形成原因："></a>二、恋爱脑的形成原因：</h2><ol><li>激素影响：当一个人陷入恋爱时，大脑会释放多巴胺、催产素等激素，这些激素会导致个体产生愉悦、安心的感觉，使人在感情中失去理智。  </li><li>心理依赖：在恋爱关系中，个体可能因为害怕失去对方而产生心理依赖，从而忽视自己的需求和价值观，一门心思投入到感情中。  </li><li>社会文化影响：社会对爱情的描绘和期待，如童话故事、浪漫电影等，可能导致人们对爱情产生不切实际的幻想，进而陷入恋爱脑。</li></ol><h2 id="三、如何避免恋爱脑给自己带来的负面影响："><a href="#三、如何避免恋爱脑给自己带来的负面影响：" class="headerlink" title="三、如何避免恋爱脑给自己带来的负面影响："></a>三、如何避免恋爱脑给自己带来的负面影响：</h2><ol><li>保持独立：在恋爱关系中，要保持自己的独立性和个人空间，不过分依赖对方。可以从事自己的兴趣爱好，提升个人能力，避免陷入恋爱脑。  </li><li>增进了解：了解对方的性格、价值观、生活习惯等，以便在关系中找到平衡点。同时，也要关注自己的需求和感受，避免盲目付出。  </li><li>沟通与倾听：在恋爱关系中，要学会与对方沟通，倾听彼此的想法和感受，以便更好地了解对方和自己。良好的沟通有助于预防恋爱脑的发生。  </li><li>保持理智：在面对感情问题时，要尽量保持理智，避免情绪化的决策。可以尝试与朋友或家人交流，听取他们的意见，从而更客观地看待问题。  </li><li>建立正确的爱情观：认识到爱情并非生活的全部，而是其中一个重要部分。要保持对生活的热爱，关注自己的成长和进步。  </li><li>学会放手：当意识到自己陷入恋爱脑时，要学会放手，给自己和对方一些空间。在这个过程中，可以重新审视感情，找到适合自己的伴侣。<br>总之，避免恋爱脑的负面影响需要我们在感情中保持独立、理智和沟通，同时树立正确的人生观和爱情观。只有这样，我们才能在爱情中找到真正的幸福。</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 心理学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/posts/16107.html"/>
+      <url>/posts/16107.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
